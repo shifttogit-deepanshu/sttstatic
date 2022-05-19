@@ -2,6 +2,8 @@ import React, { Component } from 'react';
 import { Container } from 'reactstrap';
 import { getTokenOrRefresh } from './token_util';
 import './custom.css'
+import pic from "./assets/WhatsApp Image 2022-05-19 at 11.15.56 AM (1).jpeg"
+
 
 const speechsdk = require('microsoft-cognitiveservices-speech-sdk')
 
@@ -76,6 +78,7 @@ export default class App extends Component {
     render() {
         return (
             <Container className="app-container">
+                <div className="backimg"><img className='picback' src={pic} width="100%" height="100%"/></div>
                 <div className="row main-container">
                     <div className="col-6">
                         <i className="fas fa-microphone fa-lg mr-2" onClick={() => this.sttFromMic()}></i>

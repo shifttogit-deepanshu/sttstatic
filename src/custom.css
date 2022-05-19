@@ -33,6 +33,10 @@ body{
     font-size: 40px;
 }
 
+.backimg{
+   align-self: center;
+}
+
 .col-6{
     display: flex;
     justify-content: center;
