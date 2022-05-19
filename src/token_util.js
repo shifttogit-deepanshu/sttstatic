@@ -7,7 +7,7 @@ export async function getTokenOrRefresh() {
 
     if (speechToken === undefined) {
         try {
-            const res = await axios.get('https://stserver.azurewebsites.net/api/get-speech-token');
+            const res = await axios.get('https://ccserver1.azurewebsites.net/api/get-speech-token');
             const token = res.data.token;
             const region = res.data.region;
             cookie.set('speech-token', region + ':' + token, {maxAge: 540, path: '/'});
